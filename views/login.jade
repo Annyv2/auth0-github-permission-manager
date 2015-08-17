@@ -5,8 +5,9 @@ script.
   lock.show({
       container: 'root'
     , callbackURL: '#{callbackUrl}'
+    , connections: ['#{auth0Connection}']
     , responseType: 'code'
     , authParams: {
-      scope: 'openid profile'
+      scope: 'openid'
     }
   });

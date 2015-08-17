@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  - if (github_username)
+    p This account is linked with the Github username #{github_username}.
+  - else
+    a(href='#{linkUrl}') Verify Github Account
